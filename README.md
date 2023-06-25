@@ -1,1 +1,1 @@
-# ESP-with-MQ-sensor
+# ESP32-with-MQ-sensor
