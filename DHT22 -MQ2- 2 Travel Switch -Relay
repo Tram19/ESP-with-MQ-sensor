@@ -12,8 +12,8 @@ DHT dht(DHTPIN, DHTTYPE);
 #define         RatioMQ136CleanAir        (3.6) // Ratio of your sensor, for this example an MQ-2
 float  H2SPPM;
 #define relay 23
-#define CTHT1 22
-#define CTHT2 21
+#define CTHT1 22 // cua ham
+#define CTHT2 21 // mat na
 MQUnifiedsensor MQ136(Board, Voltage_Resolution, ADC_Bit_Resolution, Pin, Type);
 void setup() {
   // put your setup code here, to run once:
