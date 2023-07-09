@@ -1,6 +1,6 @@
 #include "DHT.h"
 #define DHTPIN 4   
-#define DHTTYPE DHT22 
+#define DHTTYPE DHT11 
 DHT dht(DHTPIN, DHTTYPE);  
 /************************/
 #include <MQUnifiedsensor.h>
@@ -48,6 +48,9 @@ void setup() {
   /*****************************  MQ CAlibration ********************************************/ 
 
   MQ136.serialDebug(true);
+  pinMode(relay, OUTPUT);
+  pinMode(CTHT1, INPUT);
+  pinMode(CTHT2, INPUT);
 }
 
 void loop() {
