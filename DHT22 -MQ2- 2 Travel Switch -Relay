@@ -103,7 +103,7 @@ void mq136(){
   MQ136.update(); // Update data, the arduino will read the voltage from the analog pin
   MQ136.readSensor(); // Sensor will read PPM concentration using the model, a and b values set previously or from the setup
  // MQ136.serialDebug(); // Will print the table on the serial port
-  H2SPPM = map(MQ136.readSensor(),0,500,0,40); // Sensor will read PPM concentration using the model, a and b values set previously or from the setup
+  H2SPPM = map(MQ136.readSensor(),0,500,0,40); // có thể chỉnh phần này để mô phỏng chính xác hơn
   Serial.print("H2S now (PPM): ");
   Serial.println(H2SPPM);
   delay(500); //Sampling frequency
